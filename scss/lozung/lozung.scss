@@ -1,0 +1,61 @@
+.lozung {
+    background: #f4f4f4;
+}
+
+.lozung-container {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 100px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 30px 0;
+    }
+    br {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .title-sm {
+        margin: 0;
+    }
+    .lozung-title {
+        font: bold 1.5rem 'Lato', sans-serif;
+        color: #000;
+        margin-bottom: 20px;
+        @media(max-width: 990px) {
+            font-size: 1.125rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+    .text-simple {
+        margin: 0;
+    }
+}
+
+.lozung-box-title {
+    position: relative;
+    text-align: right;
+    @media (max-width: 990px) {
+        text-align: center;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        height: 150px;
+        width: 3px;
+        right: -50px;
+        background: #f16338;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .title-sm {
+        line-height: 40px;
+        @media(max-width: 990px) {
+            line-height: 30px;
+        }
+    }
+}

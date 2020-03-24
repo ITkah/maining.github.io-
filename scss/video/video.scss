@@ -1,0 +1,33 @@
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.video {
+    position: relative;
+    height: 700px;
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
+
+.video-bg {
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}

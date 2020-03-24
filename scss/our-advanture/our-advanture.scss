@@ -1,0 +1,82 @@
+.our-img {
+    margin-bottom: 15px;
+    &::after {
+        display: block;
+        content: '\f5a2';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 900;
+        color: #d1d6da;
+        font-size: 60px;
+    }
+}
+
+.our-advanture-container {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 0;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.our-advanture-box {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .4s;
+    position: relative;
+    &:hover {
+        background-color: #dcb260;
+        box-shadow: 0 2px 2px 0 rgba(241, 99, 56, 0.05), 0 4px 4px 0 rgba(241, 99, 56, 0.05), 0 8px 8px 0 rgba(241, 99, 56, 0.05), 0 16px 16px 0 rgba(241, 99, 56, 0.05), 0 32px 32px 0 rgba(241, 99, 56, 0.05), 0 64px 64px 0 rgba(241, 99, 56, 0.05);
+        border-color: #dcb260;
+        transform: translateY(-5px);
+        .our-img {
+            &::after {
+                color: #fff;
+            }
+        }
+        .our-title {
+            color: #fff;
+        }
+        .text-simple {
+            color: #fff;
+        }
+    }
+    .icon-2 {
+        &::after {
+            content: '\f26e';
+        }
+    }
+    .icon-3 {
+        &::after {
+            content: '\f5a2';
+        }
+    }
+    .icon-4 {
+        &::after {
+            content: '\f5a2';
+        }
+    }
+    .our-title {
+        font: bold 1.5rem 'Lato', sans-serif;
+        color: #000;
+        margin-bottom: 10px;
+        @media (max-width: 990px) {
+            font-size: 1.2rem;
+        }
+    }
+    .text-simple {
+        margin: 0;
+    }
+}

@@ -1,0 +1,37 @@
+.btn-simple {
+    font: 700 1.1rem 'Lato', sans-serif;
+    border-radius: 50px;
+    border: 1px solid #333333;
+    color: #333333;
+    padding: 10px 45px;
+    transition: .3s;
+    display: inline-block;
+    text-transform: uppercase;
+    @media (max-width: 990px) {
+        font-size: 1rem;
+        padding: 10px 35px;
+    }
+    &:hover {
+        color: #fff;
+        background: #333333;
+    }
+}
+
+.btn-white {
+    font: 400 1rem 'Lato', sans-serif;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 60px;
+    transition: .3s;
+    display: inline-block;
+    text-transform: uppercase;
+    @media (max-width: 990px) {
+        font-size: 1rem;
+        padding: 10px 35px;
+    }
+    &:hover {
+        color: #333;
+        background: #fff;
+    }
+}
