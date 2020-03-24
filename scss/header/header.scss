@@ -23,18 +23,24 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-right: 20px;
             @media (max-width: 990px) {
                 flex-direction: column;
                 align-items: flex-start;
+                margin: 0;
             }
             li {
                 @media (max-width: 990px) {
                     margin: 10px 20px;
                 }
                 a {
+                    transition: .3s;
                     color: #fff;
                     padding: 15px 20px;
                     font: 400 1rem 'Lato', sans-serif;
+                    &:hover {
+                        color: #dcb260;
+                    }
                     @media (max-width: 990px) {
                         color: #000;
                         padding: 0;
@@ -50,10 +56,8 @@ header {
 .header-container {
     display: flex;
     align-items: center;
+    padding: 0 15px;
     justify-content: space-between;
-    @media (max-width: 990px) {
-        padding: 0 15px;
-    }
 }
 
 .logo-white {
@@ -101,4 +105,30 @@ header {
     @media (max-width: 990px) {
         display: block;
     }
+}
+
+.other-header {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    nav {
+        ul {
+            li {
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+    .logo-white {
+        display: none;
+    }
+    
+    .logo-dark {
+        display: block;
+        height: 40px;
+        @media (max-width: 990px) {
+            display: block;
+            height: 30px;
+        }
+    }    
 }

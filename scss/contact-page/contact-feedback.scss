@@ -1,0 +1,68 @@
+.contact-info-box {
+    max-width: 300px;
+    .contact-title {
+        color: #333;
+        font: 900 1rem'Lato', sans-serif;
+        margin-bottom: 25px;
+    }
+    .contact-info-text {
+        display: block;
+        font: 400 1rem'Lato', sans-serif;
+        color: #6b6b6b;
+        margin-bottom: 20px;
+        padding-left: 35px;
+        position: relative;
+    }
+    .home {
+        &::before {
+            content: '\f015';
+            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+            font-weight: 900;
+            color: #6b6b6b;
+            font-size: 15px;
+            position: absolute;
+            left: 0;
+            top: 3px;
+            display: block;
+        }
+    }
+    .phone {
+        &::before {
+            content: '\f095';
+            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+            font-weight: 900;
+            color: #6b6b6b;
+            font-size: 15px;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            display: block;
+        }
+    }
+    .printer {
+        &::before {
+            content: '\f02f';
+            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+            font-weight: 900;
+            color: #6b6b6b;
+            font-size: 15px;
+            position: absolute;
+            left: 0;
+            top: 1px;
+            display: block;
+        }
+    }
+    .mail {
+        &::before {
+            content: '\f658';
+            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+            font-weight: 900;
+            color: #6b6b6b;
+            font-size: 15px;
+            position: absolute;
+            left: 0;
+            top: 3px;
+            display: block;
+        }
+    }
+}
