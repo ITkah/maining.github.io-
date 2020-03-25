@@ -28,3 +28,23 @@
         height: auto;
     }
 }
+
+.seo-lozung {
+    background: url(../img/ceo/seo-bg.png) no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    .container {
+        height: 100%;
+    }
+    .seo-lozung-box {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

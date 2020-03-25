@@ -1,0 +1,26 @@
+.presentation {
+    iframe {
+        height: 400px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .download-doc {
+        font: 700 1.1rem 'Lato', sans-serif;
+        border-radius: 50px;
+        background: #dcb260;
+        border: 1px solid #dcb260;
+        color: #fff;
+        padding: 10px 45px;
+        transition: .3s;
+        display: inline-block;
+        text-transform: uppercase;
+        @media (max-width: 990px) {
+            font-size: 1rem;
+            padding: 10px 35px;
+        }
+        &:hover {
+            color: #dcb260;
+            background: #fff;
+        }
+    }
+}
