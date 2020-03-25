@@ -1,0 +1,30 @@
+.seo-messages-container {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+    .title-xsm {
+        margin-bottom: 10px;
+        color: #333;
+        font: 900 1.5rem 'Lato', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1.2rem;
+        }
+    }
+    .signature-box {
+        .signature-text {
+            color: #333;
+            margin-bottom: 20px;
+            font: 900 1rem 'Lato', sans-serif;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

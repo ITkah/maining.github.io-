@@ -6,7 +6,7 @@ header {
     transition: .3s;
     top: 0;
     @media (max-width: 990px) {
-        background: #fff;
+        background: #2f2e2a;
         transition: .3s;
         padding: 15px 0;
     }
@@ -15,7 +15,7 @@ header {
             display: none;
             position: absolute;
             background: #fff;
-            top: 50px;
+            top: 58px;
             left: 0;
             width: 100%;
         }
@@ -62,37 +62,26 @@ header {
 
 .logo-white {
     @media (max-width: 990px) {
-        display: none;
+        height: 30px;
     }
 }
 
 .logo-dark {
     display: none;
-    height: 40px;
-    @media (max-width: 990px) {
-        display: block;
-        height: 30px;
-    }
 }
 
 .fixed-header {
-    background: #fff;
+    background: #2f2e2a;
     transition: .3s;
     padding: 15px 20px;
     @media (max-width: 990px) {
         padding: 15px 0;
     }
-    .logo-dark {
-        display: block;
-    }
-    .logo-white {
-        display: none;
-    }
     nav {
         ul {
             li {
                 a {
-                    color: #000;
+                    color: #fff;
                 }
             }
         }
@@ -108,27 +97,21 @@ header {
 }
 
 .other-header {
-    background: #fff;
-    border-bottom: 1px solid #ccc;
+    background: #2f2e2a;
+    border-bottom: 1px solid #2f2e2a;
     nav {
         ul {
             li {
                 a {
-                    color: #000;
+                    color: #fff;
+                    @media (max-width: 990px) {
+                        color: #000;
+                    }
                 }
             }
         }
     }
     .logo-white {
-        display: none;
-    }
-    
-    .logo-dark {
         display: block;
-        height: 40px;
-        @media (max-width: 990px) {
-            display: block;
-            height: 30px;
-        }
-    }    
+    }
 }
