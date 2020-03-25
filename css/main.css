@@ -100,6 +100,9 @@ header {
       padding: 15px 0; } }
   .fixed-header nav ul li a {
     color: #fff; }
+    @media (max-width: 990px) {
+      .fixed-header nav ul li a {
+        color: #000; } }
 
 .menu-btn {
   display: none;
@@ -118,6 +121,15 @@ header {
         color: #000; } }
   .other-header .logo-white {
     display: block; }
+
+.curse {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.tv-embed-widget-wrapper {
+  height: 20px; }
 
 .fullscreen-bg {
   overflow: hidden;
@@ -1108,6 +1120,8 @@ footer {
 .footer-bottom {
   background: rgba(0, 0, 0, 0.8); }
   .footer-bottom .container {
+    padding: 10px 0; }
+  .footer-bottom .container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1139,21 +1153,6 @@ footer {
       @media (max-width: 990px) {
         .footer-bottom .container img {
           margin: 0; } }
-
-.footer-icon {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  @media (max-width: 990px) {
-    .footer-icon {
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
 
 .bredcrumbs-bg {
   background: url(../img/bredcrumbs/bredcrumbs-bg.png) no-repeat center center;

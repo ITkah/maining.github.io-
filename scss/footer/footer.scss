@@ -94,6 +94,9 @@ footer {
 .footer-bottom {
     background: rgba(0, 0, 0, .8);
     .container {
+        padding: 10px 0;
+    }
+    .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -110,13 +113,5 @@ footer {
                 margin: 0;
             }
         }
-    }
-}
-
-.footer-icon {
-    display: flex;
-    @media(max-width: 990px) {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 }

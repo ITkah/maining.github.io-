@@ -82,6 +82,9 @@ header {
             li {
                 a {
                     color: #fff;
+                    @media (max-width: 990px) {
+                        color: #000;
+                    }
                 }
             }
         }
@@ -114,4 +117,12 @@ header {
     .logo-white {
         display: block;
     }
+}
+
+.curse {
+    display: flex;
+}
+
+.tv-embed-widget-wrapper {
+    height: 20px;
 }
