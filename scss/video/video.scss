@@ -15,7 +15,7 @@
 
 .video {
     position: relative;
-    height: 850px;
+    height: 800px;
     @media (max-width: 990px) {
         display: none;
     }
@@ -29,5 +29,21 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.video-info {
+    position: relative;
+    top: -470px;
+    .title-sm {
+        color: #fff;
+        font-size: 4rem;
+    }
+    .text-simple {
+        color: #fff;
+    }
+}
+
+.video {
+    position: relative;
 }

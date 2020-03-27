@@ -53,19 +53,24 @@
             color: #fff;
         }
     }
+    .icon-1 {
+        &::after {
+            content: '\f4c0';
+        }
+    }
     .icon-2 {
         &::after {
-            content: '\f26e';
+            content: '\f0e8';
         }
     }
     .icon-3 {
         &::after {
-            content: '\f5a2';
+            content: '\f66f';
         }
     }
     .icon-4 {
         &::after {
-            content: '\f5a2';
+            content: '\f201';
         }
     }
     .our-title {

@@ -27,6 +27,17 @@
                             </li>
                             <li>
                                 <a href="#">Projects</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">qwet</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">qwet</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">qwet</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">Investor Relations</a>
@@ -55,15 +66,23 @@
             <div class="bredcrumbs padding margin">
                 <div class="container">
                     <div class="bredcrumbs-container">
-                        <span>
-                            Home
-                        </span>
-                        <span>
-                            News
-                        </span>
+                        <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                            <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                <a class="breadcrumbs__link" href="http://maining.legacymeasurements.com/" itemprop="item">
+                                    <span itemprop="name">Главная</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                            </span>
+                            <span class="breadcrumbs__current">News</span></div>
                     </div>
                 </div>
             </div>
+            <section class="news padding">
+                <div class="container">
+                    <div class="news-container">
+                        123
+                    </div>
+            </section>
         </main>
         <footer class="padding">
             <div class="container">
@@ -105,11 +124,11 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/common.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/common.js"></script>
 </body>
 
 </html>

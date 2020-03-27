@@ -9,4 +9,14 @@ $(document).ready(function() {
             $('header').removeClass("fixed-header");
         }
     });
+
+    $(window).resize(function() {
+        if ($(window).width() < 990) {
+            $(".dropdown-toggle").on("click", function(e) {
+                e.preventDefault();
+                $(".dropdown-menu").slidetToggle();
+            });
+        }
+    });
+
 });

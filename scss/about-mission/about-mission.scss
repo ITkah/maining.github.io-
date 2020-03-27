@@ -1,6 +1,7 @@
 .about-mission {
-    background: url(../img/about-mision/about-bg.png) no-repeat center center fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     .about-mission-box {
         padding: 20px;
         background: rgba(0, 0, 0, .4);

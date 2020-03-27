@@ -37,9 +37,12 @@ header {
                     transition: .3s;
                     color: #fff;
                     padding: 15px 20px;
-                    font: 400 1rem 'Lato', sans-serif;
+                    font: 400 .95rem 'Lato', sans-serif;
                     &:hover {
                         color: #dcb260;
+                    }
+                    @media (max-width: 1024px) {
+                        padding: 15px;
                     }
                     @media (max-width: 990px) {
                         color: #000;
@@ -53,6 +56,16 @@ header {
     }
 }
 
+nav {
+    ul {
+        li {
+            @media (max-width: 990px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -61,6 +74,7 @@ header {
 }
 
 .logo-white {
+    height: 60px;
     @media (max-width: 990px) {
         height: 30px;
     }
@@ -89,6 +103,17 @@ header {
             }
         }
     }
+    .sub-menu {
+        background: #2f2e2a;
+        @media (max-width: 990px) {
+            background: #fff;
+        }
+        a {
+            @media (max-width: 990px) {
+                color: #000;
+            }
+        }
+    }
 }
 
 .menu-btn {
@@ -114,6 +139,17 @@ header {
             }
         }
     }
+    .sub-menu {
+        background: #2f2e2a;
+        @media (max-width: 990px) {
+            background: #fff;
+        }
+        a {
+            @media (max-width: 990px) {
+                color: #000;
+            }
+        }
+    }
     .logo-white {
         display: block;
     }
@@ -125,4 +161,142 @@ header {
 
 .tv-embed-widget-wrapper {
     height: 20px;
+}
+
+nav {
+    ul {
+        li {
+            position: relative;
+            &:hover {
+                .sub-menu {
+                    display: block;
+                }
+            }
+        }
+        li:nth-child(2) {
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                background: url(../img/icon/down-arrow.png);
+                background-size: 10px 10px;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 7px;
+                right: -1px;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        li:nth-child(3) {
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                background: url(../img/icon/down-arrow.png);
+                background-size: 10px 10px;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 7px;
+                right: -1px;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    padding: 0 15px;
+    text-align: left;
+    width: 100%;
+    @media (max-width: 990px) {
+        position: relative;
+        top: 0;
+        bottom: -10px;
+        margin-bottom: -15px;
+        display: block;
+        padding: 0;
+        left: 10px;
+    }
+    li {
+        display: block;
+        margin: 10px 0;
+        a {
+            padding: 0;
+        }
+    }
+    li:nth-child(2) {
+        &::after {
+            display: none;
+        }
+    }
+    li:nth-child(3) {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.white-popup-block {
+    position: relative;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    border-right: 5px;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-popup-block p {
+    margin: 0;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu a {
+    position: relative;
+}
+
+.dropdown-menu a::after {
+    content: '';
+    display: block;
+    background: url(../img/icon/down-arrow.png);
+    background-size: 10px 10px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    right: -1px;
+    &::after {
+        display: none;
+    }
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown a:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 990px) {
+    .dropdown-menu {
+        display: block;
+    }
 }

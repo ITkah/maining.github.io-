@@ -30,7 +30,7 @@
             padding: 15px 0;
         }
     }
-    span {
+    .breadcrumbs__link {
         color: #fff;
         font: bold .87rem 'Lato', sans-serif;
         &::after {
@@ -40,10 +40,15 @@
             left: -5px;
         }
     }
-    span:last-child {
+    .breadcrumbs__current {
+        font: bold .87rem 'Lato', sans-serif;
         color: #dcb260;
         &::after {
             display: none;
         }
     }
+}
+
+.breadcrumbs__separator {
+    display: none;
 }
