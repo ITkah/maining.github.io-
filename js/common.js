@@ -10,13 +10,4 @@ $(document).ready(function() {
         }
     });
 
-    $(window).resize(function() {
-        if ($(window).width() < 990) {
-            $(".dropdown-toggle").on("click", function(e) {
-                e.preventDefault();
-                $(".dropdown-menu").slidetToggle();
-            });
-        }
-    });
-
 });
